@@ -10,6 +10,7 @@
 		11AAD1EF299F74AB00702537 /* ContactInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AAD1EE299F74AB00702537 /* ContactInfoViewController.swift */; };
 		11AAD21D299FA26300702537 /* DetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AAD21C299FA26300702537 /* DetailsTableViewController.swift */; };
 		11AAD21F299FB0E800702537 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AAD21E299FB0E800702537 /* TabBarController.swift */; };
+		11AAD223299FBF6C00702537 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AAD222299FBF6C00702537 /* CustomTableViewCell.swift */; };
 		11E61E25299E8E2F00C0D24F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E61E24299E8E2F00C0D24F /* AppDelegate.swift */; };
 		11E61E27299E8E2F00C0D24F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E61E26299E8E2F00C0D24F /* SceneDelegate.swift */; };
 		11E61E2C299E8E2F00C0D24F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11E61E2A299E8E2F00C0D24F /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 		11AAD1EE299F74AB00702537 /* ContactInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInfoViewController.swift; sourceTree = "<group>"; };
 		11AAD21C299FA26300702537 /* DetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewController.swift; sourceTree = "<group>"; };
 		11AAD21E299FB0E800702537 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		11AAD222299FBF6C00702537 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		11E61E21299E8E2F00C0D24F /* HW7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW7.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11E61E24299E8E2F00C0D24F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11E61E26299E8E2F00C0D24F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				11E61E39299E8F4A00C0D24F /* View Controllers */,
 				11E61E38299E8E3F00C0D24F /* Supporting Files */,
 				11E61E2D299E8E3000C0D24F /* Assets.xcassets */,
+				11AAD222299FBF6C00702537 /* CustomTableViewCell.swift */,
 			);
 			path = HW7;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11AAD223299FBF6C00702537 /* CustomTableViewCell.swift in Sources */,
 				11E61E41299E919C00C0D24F /* Person.swift in Sources */,
 				11AAD21F299FB0E800702537 /* TabBarController.swift in Sources */,
 				11E61E43299E91D500C0D24F /* DataManager.swift in Sources */,

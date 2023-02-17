@@ -14,7 +14,7 @@ class ContactListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        contactListTableView.rowHeight = 80
+        contactListTableView.rowHeight = 100
     }
     
     //MARK: - Navigation
@@ -33,10 +33,14 @@ extension ContactListViewController: UITableViewDataSource, UITableViewDelegate 
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "contact", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "contact", for: indexPath) as! CustomTableViewCell
         let contact = contacts[indexPath.row]
-        cell.textLabel?.text = contact.fullName
-        cell.imageView?.image = UIImage(named: contact.name)
+        
+        cell.contactNameLabel.text = contact.fullName
+        cell.contactImage.image = UIImage(named: contact.name)
+        
+        cell.cellView.layer.cornerRadius = cell.cellView.frame.height / 2
+        cell.contactImage.layer.cornerRadius = cell.contactImage.frame.height / 2
         
         return cell
     }
