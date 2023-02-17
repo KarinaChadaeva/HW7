@@ -27,7 +27,7 @@ class ContactListViewController: UIViewController {
 }
 
 //MARK: - Table view data source
-extension ContactListViewController: UITableViewDataSource {
+extension ContactListViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return contacts.count
     }
@@ -39,6 +39,10 @@ extension ContactListViewController: UITableViewDataSource {
         cell.imageView?.image = UIImage(named: contact.name)
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 
